@@ -1,0 +1,28 @@
+.tdetails{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 60%;
+}
+
+.entity{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 20rem;
+}
+
+.ddmove{
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 576px) {
+    .entity{
+        width: 28rem;
+    }
+    .tdetails{
+        margin-bottom: 2%;
+        width: 100%;
+    }
+ }

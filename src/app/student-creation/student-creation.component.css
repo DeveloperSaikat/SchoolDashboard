@@ -1,0 +1,25 @@
+.container{
+    margin-top: 2%;
+}
+
+label{
+    margin-left: 2%;
+}
+
+input{
+    width: 320%;
+}
+
+.card{
+    margin-bottom: 5%;
+}
+
+@media (max-width: 576px) { 
+    
+    label{
+        margin-left: 0%;
+    }
+    input{
+        width: 150%;
+    }
+ }

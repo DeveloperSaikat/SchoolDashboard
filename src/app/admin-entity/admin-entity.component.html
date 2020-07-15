@@ -1,0 +1,112 @@
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Profile Creation:</h5>
+            <li class="dropdown ddmove">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Profile
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Teacher</a>
+                  <a class="dropdown-item" href="#">Student</a>
+                  <a class="dropdown-item" href="#">Staff</a>
+                </div>
+              </li>
+            <form #formData='ngForm' (ngSubmit) = "createTeacher(formData)">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input ngModel #firstName="ngModel" name="firstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input ngModel #lastName="ngModel" name="lastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input ngModel #email="ngModel" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Subjects</label>
+                    <input ngModel #subjects="ngModel" name="subjects" type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Employee ID:</label>
+                    <input ngModel #eid="ngModel" name="eid" type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+      </div>
+
+      <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Member Stats:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">48</h6>
+          <div *ngIf="chartOfProfiles" style="height: 300px;">
+            <canvas id="canvasProfile">{{ chartOfProfiles }}</canvas>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Event Creation:</h5>
+            <li class="dropdown ddmove">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Event Type
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Holiday</a>
+                  <a class="dropdown-item" href="#">Exhibition/Cultural Event</a>
+                  <a class="dropdown-item" href="#">Excursions/Outdoor Activity</a>
+                </div>
+              </li>
+            <form #eventData='ngForm' (ngSubmit) = "createAnEvent(eventData)">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Event Name</label>
+                  <input ngModel #eventName="ngModel" name="eventName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Event Location</label>
+                    <input ngModel #eventLoc="ngModel" name="eventLoc" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">From:</label>
+                        <input ngModel #fromDt="ngModel" name="fromDt" type="date" id="picker" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">To:</label>
+                        <input ngModel #toDt="ngModel" name="toDt" type="date" id="picker" class="form-control">
+                      </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+    </div>
+        <div class="card entity">
+            <div class="card-body">
+              <h5 class="card-title">Event Stats:</h5>
+              <h6 class="card-subtitle mb-2 text-muted">48</h6>
+              <div *ngIf="chartOfEvents" style="height: 300px;">
+                <canvas id="canvasEvent">{{ chartOfEvents }}</canvas>
+              </div>
+            </div>
+        </div>
+
+</div>
+        
+        
+            
+
+ 
+  

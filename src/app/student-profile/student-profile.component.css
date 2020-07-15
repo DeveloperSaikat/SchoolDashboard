@@ -1,0 +1,33 @@
+.marks{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 60%;
+}
+
+.entity{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 20rem;
+}
+
+.tdetails{
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+    margin-bottom: 2%;
+    width: 94%;
+}
+
+@media (max-width: 576px) { 
+    .marks{
+        width: 98%;
+    }
+    .entity{
+        width: 28rem;
+    }
+    .tdetails{
+       margin-left: -1.4%;
+       width: 103%;
+    }
+ }

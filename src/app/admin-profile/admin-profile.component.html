@@ -1,0 +1,141 @@
+<div class="row">
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Teachers Added:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">20</h6>
+          <p class="card-text">Total count of Teachers in this platform. To add more please click on the Link.</p>
+          <a href="#" class="card-link">Add Teacher</a>
+        </div>
+    </div>
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Students Added:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">520</h6>
+          <p class="card-text">Number of Students in this platform. To add more please click on the Link.</p>
+          <a href="#" class="card-link">Add Student</a>
+        </div>
+    </div>
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Staffs Added:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">35</h6>
+          <p class="card-text">Total count of Staffs in this platform. To add more please click on the Link.</p>
+          <a href="#" class="card-link">Add Staff</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Teachers</h5>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name:</th>
+                    <th scope="col">Subjects:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>C.N.Jha</td>
+                    <td>Physics</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Sudeshna Chakraborty</td>
+                    <td>English</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>N.Kar</td>
+                    <td>Chemistry</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Teacher Stats:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">20</h6>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Subject
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <div *ngIf="chartOfTeachers">
+            <canvas id="canvasTeacher">{{ chartOfTeachers }}</canvas>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Students</h5>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name:</th>
+                    <th scope="col">Class:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>C.N.Jha</td>
+                    <td>6-A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Sudeshna Chakraborty</td>
+                    <td>6-A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>N.Kar</td>
+                    <td>6-A</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Class Stats:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">48</h6>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Class
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <div *ngIf="chartOfStudents">
+            <canvas id="canvasStudent">{{ chartOfStudents }}</canvas>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+

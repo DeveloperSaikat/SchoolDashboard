@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="card marks">
+        <div class="card-body">
+          <h5 class="card-title">Marks Tally</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Class: 6</h6>
+               
+          <div class="row">
+            <li class="dropdown ddmove">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Class
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+    
+              <li class="dropdown ddmove">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Subject
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+          </div>
+       
+        
+          <div *ngIf="marksChart" id="graph">
+            <canvas id="canvasMarks">{{ marksChart }}</canvas>
+          </div>
+        </div>
+      </div>
+
+    <div class="card entity">
+        <div class="card-body">
+            <h5 class="card-title">Leaderboard</h5>
+            <li class="dropdown ddmove">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Class
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name:</th>
+                    <th scope="col">Total:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>C.N.Jha</td>
+                    <td>98%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Sudeshna Chakraborty</td>
+                    <td>96%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Awadh Narayan</td>
+                    <td>91.5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>N.Kar</td>
+                    <td>90%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>R.K.Pandit</td>
+                    <td>88%</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="card tdetails">
+    <div class="card-body">
+        <h5 class="card-title">Upcoming Events:</h5>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Events:</th>
+                <th scope="col">Dates:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Republic Day Celebration: Parade, Culutural Event, Flag Hosting</td>
+                <td>26 january 2021</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Saraswati Puja: Cultural Events, Extracurrical Activities</td>
+                <td>15 February 2021</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Science Exhibition: Innovation Week, Science Project Competition</td>
+                <td>21 - 25 February 2020</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

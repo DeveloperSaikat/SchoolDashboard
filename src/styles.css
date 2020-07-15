@@ -1,0 +1,10 @@
+
+body{
+    height: 100%;
+    background-image: linear-gradient(rgb(31, 31, 253),white);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Marks</h5>
+            
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Unit Test 1</a>
+              <a class="dropdown-item" href="#">Unit Test 2</a>
+              <a class="dropdown-item" href="#">Unit Test 3</a>
+            </div>
+          </li>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Marks</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr *ngFor="let item of data | slice: startIndex: endIndex">
+                      <th scope="row">{{item.Subject}}</th>
+                      <td>{{item.Marks}}</td>
+                      <td>{{item.Total}}</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li *ngFor="let i of getArrayFromNumber(data.length); let in = index" class="page-item">
+                    <a class="page-link" (click)="updateIndex(in)">{{in+1}}</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav> 
+        </div>
+    </div>
+
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Marks Stats:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">5 subjects</h6>
+          <div *ngIf="chartOfStudentMarks" style="height: 250px;">
+            <canvas id="canvasStudent">{{ chartOfStudentMarks }}</canvas>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="card tdetails">
+        <div class="card-body">
+            <h5 class="card-title">Remarks</h5>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Topic:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of homework | slice: begIndex: lastIndex">
+                    <th scope="row">{{item.Position}}</th>
+                    <td>{{item.Subject}}</td>
+                    <td>{{item.Topic}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li *ngFor="let i of getArrayFromNumber(homework.length); let in = index" class="page-item">
+                    <a class="page-link" (click)="updateCompleteIndex(in)">{{in+1}}</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav> 
+        </div>
+    </div>
+
+    <div class="card entity">
+        <div class="card-body">
+          <h5 class="card-title">Marks over semesters:</h5>
+          <h6 class="card-subtitle mb-2 text-muted">20</h6>
+          <div *ngIf="chartOfMarksInAYear" style="height: 250px;">
+            <canvas id="canvasMarks">{{ chartOfMarksInAYear }}</canvas>
+          </div>
+        </div>
+    </div>
+
+    
+</div>
