@@ -1,27 +1,25 @@
-# SchoolApp
+# SchoolApp (Still in Progress)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+A school dashboard application using Angular 9 and Firebase.\
+Categorised the user base into three segments: \
+-Admin -Student -Teacher
 
-## Development server
+# Features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+For every entity I have divided the features that they can make use of
+1. Admin:
+* Can add a user based on their role
+* Add an event which will be displayed to other profiles as well
+* I have considered the School Principle as Admin, thus he/she can gets to see the overall performance on class basis
 
-## Code scaffolding
+2. Students:
+* They can edit their profile, maintain their details and will get all the necessary details in their dashboard
+* Students can check for the upcoming events, ongoing topics on subject basis and also record their achievements.
+* They will be notified about their academic performances and the reamrks that they been given by their teachers.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Teachers:
+* Through their Dashboard they can also edit and maintain their details.
+* Teachers can update the activity tracker tp notify the students about the ongoing topics.
+* Teachers can also add marks and attendance for each student.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
