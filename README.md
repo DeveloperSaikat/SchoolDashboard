@@ -33,6 +33,8 @@ For every entity I have divided the features that they can make use of
 
 ![image](https://user-images.githubusercontent.com/40135714/87668906-a708af80-c78a-11ea-8bbc-dd0f5fc77ab2.png)
 ![image](https://user-images.githubusercontent.com/40135714/87669005-d3243080-c78a-11ea-8903-195f5664270c.png)
-![image](https://user-images.githubusercontent.com/40135714/87669051-e6370080-c78a-11ea-87d8-b93a8975503e.png)
+![image](https://user-images.githubusercontent.com/40135714/87669051-e6370080-c78a-11ea-87d8-b93a8975503e.png) 
+
+#### The whole application is responsive :smile:
 
 
